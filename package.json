@@ -1,6 +1,6 @@
 {
   "name": "fontscout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fast access to the system font catalog on macOS, Windows, and Linux — with full font descriptor metadata",
   "main": "index.js",
   "exports": {
