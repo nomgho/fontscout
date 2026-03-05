@@ -1,0 +1,58 @@
+{
+  "name": "fontscout",
+  "version": "1.0.1",
+  "description": "Fast access to the system font catalog on macOS, Windows, and Linux — with full font descriptor metadata",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "types": "index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.6.0",
+    "node-gyp-build": "^4.8.4"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "prebuildify": "^6.0.1"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "prebuilds/",
+    "binding.gyp",
+    "src/"
+  ],
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "prebuild": "prebuildify --napi --strip",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nomgho/fontscout.git"
+  },
+  "keywords": [
+    "font",
+    "find",
+    "search",
+    "substitute",
+    "enumerate"
+  ],
+  "author": "nomgho",
+  "contributors": [
+    "Devon Govett <devongovett@gmail.com> (original author, https://github.com/devongovett/font-manager)"
+  ],
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/nomgho/fontscout/issues"
+  },
+  "homepage": "https://github.com/nomgho/fontscout"
+}
