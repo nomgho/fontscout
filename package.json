@@ -30,6 +30,7 @@
     "src/"
   ],
   "scripts": {
+    "install": "node-gyp-build",
     "build": "node-gyp rebuild",
     "prebuild": "prebuildify --napi --strip",
     "test": "mocha"
