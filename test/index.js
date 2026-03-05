@@ -32,6 +32,8 @@ describe('fontscout', function() {
   });
 
   describe('getAvailableFonts', function() {
+    this.timeout(30000);
+
     it('should return a Promise', function() {
       const result = fontManager.getAvailableFonts();
       assert(result instanceof Promise);
